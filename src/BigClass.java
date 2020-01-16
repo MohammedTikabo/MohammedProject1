@@ -17,7 +17,7 @@ public class BigClass {
     }
     BigClass(int number, String text){
         setNumber(number);
-        this.text=text;
+        setText(text);
     }
 
     public int getNumber() {
@@ -34,4 +34,14 @@ public class BigClass {
         }
 
     }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+
 }
