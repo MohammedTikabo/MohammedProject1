@@ -56,11 +56,18 @@ public class BigClassTest {
     void testBigClassGnSS(){
         BigClass bc = new BigClass("test1");
         BigClass bc1 = new BigClass(0, "test2");
-        assertEquals("test1", bc.getText());
         bc.setText("test5");
 
         assertEquals("test5", bc.getText());
         assertEquals("test2", bc1.getText());
+
+    }
+    @Test
+    void testBigClassToUpperCase(){
+        BigClass bc = new BigClass("test1");
+
+
+        assertEquals("TEST1", bc.capitalLetter());
 
     }
 }
