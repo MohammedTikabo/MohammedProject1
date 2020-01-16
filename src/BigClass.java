@@ -20,12 +20,16 @@ public class BigClass {
         this.text=text;
     }
 
+    public int getNumber() {
+        return number;
+    }
+
     public void setNumber(int number) {
         if (this.number  < 0){
             System.out.println("number cant be zero");
         }
         else{
-            this.number = number; 
+            this.number = number;
 
         }
 
