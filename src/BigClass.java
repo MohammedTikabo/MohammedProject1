@@ -7,7 +7,7 @@ public class BigClass {
         this.text = null;
     }
     BigClass(int number){
-        this.number = number;
+        setNumber(number);
         this.text = null;
 
     }
@@ -16,8 +16,18 @@ public class BigClass {
         this.text = text;
     }
     BigClass(int number, String text){
-        this.number=number;
+        setNumber(number);
         this.text=text;
     }
 
+    public void setNumber(int number) {
+        if (this.number  < 0){
+            System.out.println("number cant be zero");
+        }
+        else{
+            this.number = number; 
+
+        }
+
+    }
 }
