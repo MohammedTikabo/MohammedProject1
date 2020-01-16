@@ -41,12 +41,26 @@ public class BigClassTest {
     }
 
     @Test
-    void testBigClassGnS(){
+    void testBigClassGnSN(){
         BigClass bc = new BigClass(0);
         BigClass bc1 = new BigClass(0, "test");
 
-        assertEquals(0, bc.getNumber());
+        bc.setNumber(-1);
+
+        assertEquals(-1, bc.getNumber());
         assertEquals(0, bc1.getNumber());
+
+    }
+
+    @Test
+    void testBigClassGnSS(){
+        BigClass bc = new BigClass("test1");
+        BigClass bc1 = new BigClass(0, "test2");
+        assertEquals("test1", bc.getText());
+        bc.setText("test5");
+
+        assertEquals("test5", bc.getText());
+        assertEquals("test2", bc1.getText());
 
     }
 }
