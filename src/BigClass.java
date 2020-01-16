@@ -25,7 +25,7 @@ public class BigClass {
     }
 
     public void setNumber(int number) {
-        if (this.number  < 0){
+        if (number  < 0){
             System.out.println("number cant be zero");
         }
         else{
