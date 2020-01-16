@@ -1,6 +1,6 @@
 public class BigClass {
-    private int number;
-    private String text;
+    public int number;
+    public String text;
 
     BigClass() {
         this.number= 0;
@@ -17,7 +17,7 @@ public class BigClass {
     }
     BigClass(int number, String text){
         this.number=number;
-        this.text=text; 
+        this.text=text;
     }
 
 }
