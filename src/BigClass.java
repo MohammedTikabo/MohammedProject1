@@ -43,5 +43,8 @@ public class BigClass {
         this.text = text;
     }
 
+    public String capitalLetter (String text){
+      return  text.toUpperCase();
+    }
 
 }
