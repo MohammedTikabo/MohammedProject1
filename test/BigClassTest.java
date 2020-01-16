@@ -39,4 +39,14 @@ public class BigClassTest {
         assertEquals(2, bc3.number);
 
     }
+
+    @Test
+    void testBigClassGnS(){
+        BigClass bc = new BigClass(0);
+        BigClass bc1 = new BigClass(0, "test");
+
+        assertEquals(0, bc.getNumber());
+        assertEquals(0, bc1.getNumber());
+
+    }
 }
